@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="BYNavTListCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="48"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="47"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Zx-Bg-N5h">
+                        <rect key="frame" x="20" y="13" width="132" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_duigou.png" translatesAutoresizingMaskIntoConstraints="NO" id="FqY-Be-r6u">
+                        <rect key="frame" x="334" y="19" width="14" height="10"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="10" id="iRt-aE-sEW"/>
+                            <constraint firstAttribute="width" constant="14" id="ndB-XN-qhY"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="FqY-Be-r6u" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="19" id="FtE-96-qyg"/>
+                    <constraint firstAttribute="trailing" secondItem="FqY-Be-r6u" secondAttribute="trailing" constant="27" id="Kfq-UH-qvf"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="selectImgView" destination="FqY-Be-r6u" id="vzY-wi-Jyh"/>
+                <outlet property="titleLabel" destination="0Zx-Bg-N5h" id="peB-i4-xl8"/>
+            </connections>
+            <point key="canvasLocation" x="441.5" y="333"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_duigou.png" width="24" height="17"/>
+    </resources>
+</document>
